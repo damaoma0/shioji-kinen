@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="フィクション（ARG）のための架空の財団のサイトです。">
+<title>パスワードの再設定｜潮路記念財団</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&family=Yuji+Syuku&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="staff">
+<div class="fiction">フィクション（ARG）です。人物・団体・出来事はすべて架空です。／本网站为虚构作品（ARG），人物、团体与事件均为虚构。／This site is fiction (an ARG): its people, organisations and events are invented. <a href="../site-info.html">詳しく／详情／More</a></div>
+
+<div class="portal">
+  <h1 data-en="Reset password" data-zh="重设密码">パスワードの再設定</h1>
+  <form id="rid" class="pform" autocomplete="off">
+    <label for="ruid" data-en="Staff ID" data-zh="职员ID">職員ID</label>
+    <input id="ruid" type="text">
+    <button type="submit" data-en="Next" data-zh="下一步">次へ</button>
+  </form>
+  <p id="rmsg" class="pmsg" aria-live="polite"></p>
+  <form id="rq" class="pform" autocomplete="off" hidden>
+    <p class="aside" data-en="Please answer your security questions." data-zh="请回答您登记的密保问题。">登録された秘密の質問にお答えください。</p>
+    <label for="a1" id="q1"></label>
+    <input id="a1" type="text">
+    <label for="a2" id="q2"></label>
+    <input id="a2" type="text">
+    <button type="submit" data-en="Submit" data-zh="提交">送信</button>
+  </form>
+  <p id="qmsg" class="pmsg" aria-live="polite"></p>
+  <p><a href="index.html" data-en="Back to login" data-zh="返回登录页面">ログイン画面に戻る</a></p>
+</div>
+
+<script src="../assets/site.js"></script>
+<script src="../assets/crypto.js"></script>
+<script src="../assets/staff.js"></script>
+</body>
+</html>
