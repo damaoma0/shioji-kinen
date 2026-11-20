@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="フィクション（ARG）のための架空の財団のサイトです。">
+<title>潮路アーカイブ｜潮路記念財団</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&family=Yuji+Syuku&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="fiction">フィクション（ARG）です。人物・団体・出来事はすべて架空です。／本网站为虚构作品（ARG），人物、团体与事件均为虚构。／This site is fiction (an ARG): its people, organisations and events are invented. <a href="site-info.html">詳しく／详情／More</a></div>
+<header class="site"><div class="wrap"><a class="brand" href="index.html"><span class="brand-name">潮路記念財団</span><span class="brand-sub">一般財団法人</span></a><nav class="main" aria-label="サイト"><a href="index.html" data-en="Home" data-zh="首页">ホーム</a><a href="about.html" data-en="About" data-zh="关于财团">財団について</a><a href="activities.html" data-en="Programmes" data-zh="事业">事業</a><a href="archive.html" aria-current="page" data-en="Shioji Archive" data-zh="潮路档案库">潮路アーカイブ</a><a href="news.html" data-en="News" data-zh="公告">お知らせ</a><a href="column.html" data-en="Digitisation Notes" data-zh="数字化手记">デジタル化だより</a><a href="contact.html" data-en="Contact" data-zh="联系我们">お問い合わせ</a></nav></div></header>
+<main class="wrap">
+
+<!-- TODO（委託業者）: 検索語の ' がエスケープされていない。WHERE restricted = 0 の条件が OR で崩れる。要修正。 -->
+<h1 data-en="Shioji Archive" data-zh="潮路档案库">潮路アーカイブ</h1>
+<p class="aside" data-en="Enter a keyword to search the foundation's collection (e.g. ferry, ceremony, photograph)." data-zh="请输入关键词检索财团收藏的资料。（例：渡轮、慰灵祭、照片）">キーワードを入力して、財団所蔵の資料を検索してください。（例：連絡船、慰霊祭、写真）</p>
+<p class="bugnote" data-en="Known issue: searches containing an apostrophe ( ' ) show a database error. We are working on a fix." data-zh="已知问题：检索词中含有撇号（ ' ）时会显示数据库错误。正在修复中。">【不具合のお知らせ】検索語にアポストロフィ（ ' ）を含めると、データベースのエラーが表示される不具合を確認しています。修正までしばらくお待ちください。</p>
+
+<form id="search" class="search" autocomplete="off">
+  <label for="q" class="sr">キーワード</label>
+  <input id="q" name="q" type="text" placeholder="キーワードを入力" data-en-ph="Enter a keyword" data-zh-ph="请输入关键词">
+  <button type="submit" data-en="Search" data-zh="检索">検索</button>
+</form>
+
+<div id="status" class="status" aria-live="polite"></div>
+<pre id="sqlerr" class="sqlerr" hidden></pre>
+<ol id="results" class="results"></ol>
+<div id="restricted" class="restricted" hidden></div>
+<div id="viewer" class="viewer" hidden></div>
+
+</main>
+<footer class="site"><div class="wrap"><p data-en="Shioji Memorial Foundation (Aomori City, Aomori)" data-zh="一般财团法人 潮路纪念财团（青森县青森市）">一般財団法人 潮路記念財団（青森県青森市）</p><p class="flinks"><a href="sitemap.html" data-en="Site map" data-zh="网站地图">サイトマップ</a><a href="faq.html" data-en="FAQ" data-zh="常见问题">よくあるご質問</a><a href="access.html" data-en="Access" data-zh="交通">アクセス</a><a href="site-info.html" data-en="About this site" data-zh="关于本网站">このサイトについて</a></p><p>フィクション（ARG）です。人物・団体・出来事はすべて架空です。／本网站为虚构作品（ARG），人物、团体与事件均为虚构。／This site is fiction (an ARG): its people, organisations and events are invented. <a href="site-info.html">詳しく／详情／More</a></p></div></footer>
+<script src="assets/site.js"></script>
+<script src="assets/crypto.js"></script>
+<script src="assets/archive.js"></script>
+</body>
+</html>
